@@ -216,11 +216,6 @@ namespace SkywardAmbience
         
         public void Draw()
         {
-            if (map.weatherManager.curWeather == WeatherDefOf.Clear)
-            {
-                return;
-            }
-            
             var settings = GetSettings();
             if (settings == null) return;
             
@@ -263,7 +258,7 @@ namespace SkywardAmbience
                 lastWeather = currentWeather;
             }
             
-            bool isCloudyWeather = weatherDefName == "Cloudy" || weatherDefName.Contains("Cloudy");
+            bool isClearWeather = weatherDefName == "Clear";
             bool isFogWeather = weatherDefName == "Fog" || weatherDefName == "Foggy";
             bool isRainWeather = weatherDefName == "Rain" || weatherDefName == "RainyThunderstorm" || weatherDefName.Contains("Rain");
             bool isThunderRain = weatherDefName == "RainyThunderstorm" || weatherDefName.Contains("Thunderstorm");
@@ -282,12 +277,7 @@ namespace SkywardAmbience
             Texture2D targetTextureToUse;
             bool useRedTint = false;
             
-            if (isCloudyWeather)
-            {
-                targetTransparency = settings.CloudTransparency;
-                targetTextureToUse = noiseTexture;
-            }
-            else if (isFogWeather)
+            if (isClearWeather || isFogWeather)
             {
                 targetTransparency = 0.06f;
                 targetTextureToUse = noiseTexture;
