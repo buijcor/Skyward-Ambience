@@ -1,0 +1,6 @@
+C:\RimWorld.v1.6.4633_LinkNeverDie.Com\Mods\SkyAmbient\Assemblies\SkywardAmbience.dll
+C:\RimWorld.v1.6.4633_LinkNeverDie.Com\Mods\SkyAmbient\Assemblies\SkywardAmbience.pdb
+C:\RimWorld.v1.6.4633_LinkNeverDie.Com\Mods\SkyAmbient\Source\obj\Debug\SkywardAmbience.csproj.AssemblyReference.cache
+C:\RimWorld.v1.6.4633_LinkNeverDie.Com\Mods\SkyAmbient\Source\obj\Debug\SkywardAmbience.csproj.CoreCompileInputs.cache
+C:\RimWorld.v1.6.4633_LinkNeverDie.Com\Mods\SkyAmbient\Source\obj\Debug\SkywardAmbience.dll
+C:\RimWorld.v1.6.4633_LinkNeverDie.Com\Mods\SkyAmbient\Source\obj\Debug\SkywardAmbience.pdb
